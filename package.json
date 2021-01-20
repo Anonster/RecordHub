@@ -1,0 +1,27 @@
+{
+  "name": "recordhub",
+  "version": "1.0.0",
+  "description": "Record Management App for Stocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anonster/RecordHub.git"
+  },
+  "keywords": [
+    "Record",
+    "Hub"
+  ],
+  "author": "Sameer katija",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anonster/RecordHub/issues"
+  },
+  "homepage": "https://github.com/Anonster/RecordHub#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
