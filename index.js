@@ -18,7 +18,13 @@ app.use(express.static(__dirname + "/public"));
 //Home Route
 app.get('/', (req, res) => {
   res.render("Landing")
-})
+});
+app.get('/signin',(req,res)=>{
+  res.render('register')
+});
+app.get('/register',(req,res)=>{
+  res.render('register')
+});
 
 app.listen(port, () => {
   console.log(`App Started on ${port}`)

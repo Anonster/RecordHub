@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="/stylesheets/main.css" rel="stylesheet">
+    <link href="/stylesheets/landing.css" rel="stylesheet">
 </head>
-<body>
     <div id="landing-header">
        <div id='background'>
           <h1>Welcome to Record Hub</h1>
-        <a href="#" class="btn btn-lg btn-success">Sign Up</a>
+        <a href="/signin" class="btn btn-lg btn-primary">Sign In</a>  
+        <a href="/register" class="btn btn-lg btn-success">Sign Up</a>
        </div>
     </div>
 
@@ -25,5 +25,4 @@
         <li></li>
         <li></li>
     </ul>
-</body>
-</html>
+<%- include('Partials/footer.ejs') %> 
