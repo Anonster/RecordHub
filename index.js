@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   res.render("Landing")
 });
 app.get('/signin',(req,res)=>{
-  res.render('register')
+  res.render('signin')
 });
 app.get('/register',(req,res)=>{
   res.render('register')
