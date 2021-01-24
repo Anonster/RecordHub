@@ -1,7 +1,7 @@
 //Calling Express
-const express = require('express')
+const express = require('express');
 //Intializing App by calling express fucntion
-const app = express()
+const app = express();
 //Setting available port to launch our server
 const port = 3000
 
@@ -19,10 +19,10 @@ app.use(express.static(__dirname + "/public"));
 app.get('/', (req, res) => {
   res.render("Landing")
 });
-app.get('/signin',(req,res)=>{
+app.get('/signin', (req, res) => {
   res.render('signin')
 });
-app.get('/register',(req,res)=>{
+app.get('/register', (req, res) => {
   res.render('register')
 });
 

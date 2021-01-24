@@ -1,23 +1,28 @@
-
-@media screen and (min-width: 992px) {
-    .width-full {
-        display: flex !important;
-        width: 100% !important;
-        justify-content: space-between;
-    }
-.item-right {
-    display: inherit;
-    
-    justify-content: flex-end!important;
-    width: 58%;
+* {
+  margin: 0;
+  padding: 0;
 }
+@media screen and (min-width: 992px) {
+  .width-full {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-between;
+  }
+  .item-right {
+    display: inherit;
+    justify-content: flex-end !important;
+    width: 58%;
+  }
 }
 .width-full {
-    width: 100%;
+  width: 100%;
 }
-.item-right a{
-    color:black!important;
+.item-right a {
+  color: black !important;
 }
 .item-right a:hover {
-    color: white !important;
+  color: white !important;
+}
+.height-70 {
+  height: 70vh !important;
 }
