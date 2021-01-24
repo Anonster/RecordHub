@@ -1,98 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 body {
-    background-color: #000;
+  background-color: #000;
 }
-
+.lead-heading {
+  font-family: "Comfortaa", cursive;
+}
 #landing-header {
-    z-index: 1;
-    position: relative;
-    text-align: center;
-    padding-top: 40vh;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
 }
 
 #landing-header h1 {
-    color: #fff;
+  color: #fff;
 }
 
 #background {
-    box-sizing: content-box;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2528361686471463) 100%, rgba(0, 0, 0, 0.13799023027179624) 100%);
-    padding: 3em;
-    width: fit-content;
-    border-radius: 10px;
-    margin: 0 auto;
+  box-sizing: content-box;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2528361686471463) 100%,
+    rgba(0, 0, 0, 0.13799023027179624) 100%
+  );
+  padding: 3em;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .slideshow {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slideshow li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 50s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
 }
 
 .slideshow li:nth-child(1) {
-    background-image: url('../resources/Main-Page.jpg')
+  background-image: url("../resources/Main-Page.jpg");
 }
 
 .slideshow li:nth-child(2) {
-    background-image: url('../resources/Main-Page1.jpg');
-    animation-delay: 10s;
+  background-image: url("../resources/Main-Page1.jpg");
+  animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-    background-image: url('../resources/Main-Page2.jpg');
-    animation-delay: 20s;
+  background-image: url("../resources/Main-Page2.jpg");
+  animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
-    background-image: url('../resources/Main-Page3.jpg');
-    animation-delay: 30s;
+  background-image: url("../resources/Main-Page3.jpg");
+  animation-delay: 30s;
 }
 
 .slideshow li:nth-child(5) {
-    background-image: url('../resources/Main-Page4.jpg');
-    animation-delay: 40s;
+  background-image: url("../resources/Main-Page4.jpg");
+  animation-delay: 40s;
 }
 
 @keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        animation-timing-function: ease-in;
-    }
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
 
-    10% {
-        opacity: 1;
-        animation-timing-function: ease-out;
-    }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
 
-    20% {
-        opacity: 1
-    }
+  20% {
+    opacity: 1;
+  }
 
-    30% {
-        opacity: 0
-    }
+  30% {
+    opacity: 0;
+  }
 }
 
 /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
-    opacity: 1;
+  opacity: 1;
+}
+.btn {
+  border: none;
+  width: 10em;
+  border-radius: 3px;
+  padding: 14px 26px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.btn-primary {
+  background-color: #008cba;
+}
+.btn-success {
+  background-color: #4caf50;
 }
