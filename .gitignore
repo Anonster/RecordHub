@@ -1,2 +1,3 @@
 /node_modules 
-input.scss
+/public/stylesheets/input.scss
+/public/stylesheets/main.css.map
