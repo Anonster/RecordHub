@@ -54,6 +54,8 @@
 }
 .navbar .navbar-data .navbar-data-block .navbar-nav .nav-item {
   list-style: none;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 .navbar .navbar-data .navbar-data-block .navbar-nav .nav-item .nav-link {
   font-size: 18px;
