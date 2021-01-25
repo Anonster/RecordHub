@@ -16,9 +16,35 @@
   background-color: #0da5fd;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar a {
   text-decoration: none;
+}
+@media (max-width: 992px) {
+  .navbar .laptop {
+    display: none;
+  }
+}
+.navbar .mobile {
+  width: 30vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (min-width: 992px) {
+  .navbar .mobile {
+    display: none;
+  }
+}
+.navbar .mobile button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.navbar .mobile button i {
+  font-size: 2.2em;
+  color: white;
 }
 .navbar .navbar-brand {
   font-family: "Maven Pro", sans-serif;
