@@ -12,6 +12,14 @@
   display: inline-block;
 }
 
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
 .navbar {
   background-color: #0da5fd;
   padding: 1rem;
@@ -86,6 +94,28 @@
 .navbar .navbar-data .navbar-data-block .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   color: whitesmoke;
+}
+
+.navbar-mobile {
+  background-color: #0ea3fa;
+  z-index: 1;
+}
+.navbar-mobile .navbar-mobile-nav {
+  padding: 10px;
+}
+.navbar-mobile .navbar-mobile-nav .nav-mobile-item {
+  padding: 0.5em;
+}
+.navbar-mobile .navbar-mobile-nav .nav-mobile-item .nav-mobile-link {
+  padding: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
