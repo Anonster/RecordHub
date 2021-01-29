@@ -25,6 +25,10 @@
   display: none;
 }
 
+.grid {
+  display: grid;
+}
+
 @media (max-width: 992px) {
   .text-md-start {
     text-align: left !important;
@@ -138,14 +142,17 @@ footer {
   padding-top: 5em;
   padding-bottom: 4em;
   color: white;
-  display: grid;
+}
+footer .grid {
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, auto);
 }
 @media (min-width: 992px) {
-  footer .row {
+  footer {
     text-align: center;
   }
 }
-footer .row .main-div {
+footer .main-div {
   margin-top: 0.3em;
 }
 
