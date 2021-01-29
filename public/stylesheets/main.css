@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto&display=swap");
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +23,20 @@
 
 .none {
   display: none;
+}
+
+@media (max-width: 992px) {
+  .text-md-start {
+    text-align: left !important;
+  }
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -115,7 +134,19 @@
 }
 
 footer {
-  background-color: black;
+  background-color: #343a40;
+  padding-top: 5em;
+  padding-bottom: 4em;
+  color: white;
+  display: grid;
+}
+@media (min-width: 992px) {
+  footer .row {
+    text-align: center;
+  }
+}
+footer .row .main-div {
+  margin-top: 0.3em;
 }
 
 /*# sourceMappingURL=main.css.map */
